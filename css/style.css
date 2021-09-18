@@ -1,0 +1,286 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+h1{
+    font-family: revert;
+    font-size: 7vh;
+}
+/* MENU DE NAVEGACION */
+
+.nav-main{
+    padding: 0;
+    width: 100%;
+    margin: auto;
+    background-color: black;
+    justify-content: center;
+
+}
+.nav-main ul{
+    list-style: none;
+}
+.nav-main ul>li{
+    position: relative;
+    display: inline-block;
+}
+.nav-main ul>li>a{
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-main ul li:hover{
+    background-color:#b40c4e;
+    transition: all, 1s;
+}
+.nav-main ul ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+.nav-main ul ul:hover{
+    display: block;
+}
+.nav-main ul ul li {
+    position: relative;
+}
+h2{
+    font-size: 20px;
+    font-family: monospace;
+}
+
+/* INGRESAR USUARIO */
+
+.sing-in{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.btn-primary{
+    background-color: black;
+    color: white;
+    border: black;
+}
+.btn-primary:hover{
+    background-color: #b40c4e;
+    transition: all, 1s;
+}
+
+
+/* ESTILO BOTONES */
+
+button{
+    border-radius: 6px;
+    margin: 2px;
+}
+button:hover{
+    background-color: #b40c4e;
+    transition: all, 1s;
+}
+
+ /* MAIN DEL INICIO */
+ main{
+     display: flex;
+     flex-flow: row nowrap;
+     justify-content: center;
+ }
+
+ /* CALCULADORA DE IMC */
+ .formIMC{
+     width: 40vw;
+     height: auto;
+     background-color: black;
+     display: flex;
+     flex-direction: column;
+     color: white;
+     margin: 20px;
+     display: flex;
+ }
+
+ /* CUADRO VALORES DE IMC */
+ .cuadroIMC{
+    width: 40vw;
+    height: auto;
+    display: flex;
+    border: ridge;
+    margin: 20px;
+    display: flex;
+ }
+ table tr td{
+     border: black;
+     text-align: center;
+     font-family: Arial, Helvetica, sans-serif;
+     width: 20vw;
+ }
+ table tr th{
+    border: black;
+    background-color: darkgray;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 20vw;
+}
+
+
+/* INICIAR SESION Y REGISTRO */
+
+.contenedor-form-CRYCC{
+    position: relative;
+    background: rgba(0,0,0,.7);
+    width: 100%;
+    max-width: 500px;
+    margin: 48px auto;
+    color: #fff;
+    border-radius: 5px;
+    padding: 40px;
+
+}
+.contenedor-form-CRYCC h2 {
+    font-family: revert;
+}
+
+.contenedor-form-CRYCC .toggle{
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 25px;
+    text-align: center;
+    border-top: 2px solid #b40c4e;
+    border-bottom: 2px solid #b40c4e;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.contenedor-form-CRYCC .toggle span {
+    letter-spacing: 1px;
+}
+.contenedor-form-CRYCC .toggle:hover{
+    border-top: 2px solid #8dc63a;
+    border-bottom: 2px solid #8dc63a;
+}
+.contenedor-form-CRYCC h2{
+    margin:  0 0 28px 0;
+    font-size: 20px;
+    font-weight: 400px;
+    line-height: 1;
+}
+
+.contenedor-form-CRYCC input[type="text"],
+.contenedor-form-CRYCC input[type="password"],
+.contenedor-form-CRYCC input[type="email"]{
+    outline: none;
+    background:  rgba(0,0,0,.5);
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    color: #fff;
+    border:none;
+    border-radius: 2px;
+    border-bottom: 4px solid #b40c4e;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 0 20px 0;
+    transition: all .5s, ease;
+}
+
+.contenedor-form-CRYCC input[type="text"]:focus,
+.contenedor-form-CRYCC input[type="password"]:focus,
+.contenedor-form-CRYCC input[type="email"]:focus {
+    border-bottom: 4px solid #8dc63a;
+}
+
+.contenedor-form-CRYCC input[type="submit"]{
+    border: 0;
+    width: 15vw;
+    height: 5vh;
+    margin-top: 18px;
+    font-size: 16px;
+    transition: all .5s, ease;
+    cursor: pointer;
+    letter-spacing: 1px;
+    color: white;
+    border-radius: 25px;
+    background-image: linear-gradient(to right, #8dc63a 0%, #b40c4e 100%);
+}
+
+.contenedor-form-CRYCC input[type="submit"]:hover{
+    background: #8dc63a;
+}
+
+.contenedor-form-CRYCC .reset-password{
+    background: rgb(243, 26, 135);
+    color:#fff;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.contenedor-form-CRYCC .reset-password a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.contenedor-form-CRYCC .formulario{
+    padding: 40px;
+    display: none;
+}
+
+.contenedor-form-CRYCC .formulario:nth-child(2){
+    display:block;
+}
+
+/* PACIENTES */
+#listadoPacientes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 3em 6em 6em 6em;
+    background: #b5b3b314;
+    border-radius: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#listadoPacientes button {
+    margin: 1em 0 1em 0;
+    width: 100%;
+    padding: 0.3em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* TURNOS */
+.turno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 3em 6em 6em 6em;
+    background: #b5b3b314;
+    border-radius: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer h2{
+    font-size: 15px;
+    text-align:center;
+    margin: 10px;
+    padding: 20px;
+    /* background:linear-gradient(to right, #8dc63a 0%, #b40c4e 100%) ; */
+    background: black;
+    color: white;
+}
+
+.div-form {
+    background-image: linear-gradient(to right, #8dc63a57 0%, #b40c4e61 100%);
+}
